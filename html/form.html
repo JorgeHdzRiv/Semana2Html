@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    
+    <title>PASTEDELI-form</title>
+</head>
+<body>
+
+    <!--FORMULARIO-->
+    <div class="content">
+        <div class="contact-wrapper">
+            <h3 class="titulo">Datos Contacto</h3>
+            <div class="contact-form">
+                <form action="form.js" method="post">
+                    <div>
+                        <label for="fullname">nombre completo:</label>
+                        <input type="text" name="fullname" id="fullname" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="telefono">telefono:</label>
+                        <input type="tel" name="telefono" id="telefono" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="direccion">dirección:</label>
+                        <input type="text" name="direccion" id="direccion" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="email">correo electronico:</label>
+                        <input type="email" name="email" id="email" class="datos" required>
+                    </div>
+                    
+                    <div>
+                        <label for="entrega">fecha de entrega:</label>
+                        <input type="datetime-local" name="entrega" id="entrega" class="datos" required>
+                    </div>
+
+                    <h2 class="titulo block">sabores</h2>
+                    <div>
+                        <input type="checkbox" name="pastel-fresa_crema" id="fresa_crema" value="pastel-fresa_crema">
+                        <label for="fresa_crema">Fresa con crema especial</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="pastel_fruta" id="fruta" value="pastel_fruta">
+                        <label for="leches">Pastel de Fruta</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="zanahoria" id="zanahoria"
+                        value="pastel_zanahoria">
+                        <label for="zanahoria">Pastel de zanahoria</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="chocolate" id="chocolate"
+                        value="pastel_chocolate">
+                        <label for="chocolate">Chocolate Especial</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="rosa tentacion" id="rosa"
+                        value="rosa_tentacion">
+                        <label for="rosa">Rosa tentacion</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="dulce delirio" id="delirio"
+                        value="dulce delirio">
+                        <label for="rosa">Dulce delirio</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="tres leches" id="leches"
+                        value="tres leches">
+                        <label for="rosa">Tres leches</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="especial" id="especial"
+                        value="ocasion especial">
+                        <label for="especial">Ocasion especial</label>
+                    </div>
+
+                    <h3 class="titulo block">Complementos</h3>
+                    <div>
+                        <input type="checkbox" name="galletes tradicionales" id="tradicionales">
+                        <label for="geometrica">Galletes tradicionales</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="gelatina deli" id="gelatina">
+                        <label for="drip-cake">Gelatina deli</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cafe especial" id="cafe">
+                        <label for="cafe">Cafe especial</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <button type="submit">enviar</button>
+                    </div>
+                    <div>
+                        <button type="reset">borrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
